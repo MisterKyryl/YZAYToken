@@ -209,6 +209,19 @@ h6 {
   top: 1.5625rem;
   right: 1rem;
   background: url("../img/icons/hide.svg") no-repeat;
+  -webkit-transition: -webkit-filter 0.3s ease 0s;
+  transition: -webkit-filter 0.3s ease 0s;
+  transition: filter 0.3s ease 0s;
+  transition: filter 0.3s ease 0s, -webkit-filter 0.3s ease 0s;
+}
+
+.button__viewpass._viewpass-active {
+  background: url("../img/icons/visi.svg") no-repeat;
+}
+
+.button__viewpass:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
 }
 
 input[type=text],
