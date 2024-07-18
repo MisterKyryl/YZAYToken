@@ -5,7 +5,7 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240717094137">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240718181404">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -180,6 +180,7 @@
 							</div>
 							<div class="form-registration__group">
 								<input data-validate data-error="The password must be between 6 and 20" id="password" type="password" name="password" placeholder="Password (mandatory field)" class="form-registration__password input" aria-label="Password" autocomplete="off">
+								<button type="button" class="button__viewpass"></button>
 							</div>
 							<div class="form-registration__group">
 								<input id="name" type="text" name="username" placeholder="User name (mandatory field)" class="form-registration__name input" aria-label="User name" autocomplete="off" required>
@@ -332,7 +333,7 @@
 					<input id="reset-email" type="email" name="form[]" placeholder="Email" class="form-reset-popup__email input input-popup" aria-label="Email" autocomplete="off" required>
 					<button data-popup="#sent-popup" type="submit" class="form-reset-popup__button button">Reset password</button>
 				</div>
-				<button data-popup="#log-in-popup" type="button" class="reset-popup__button">Forgot password?</button>
+				<button data-popup="#log-in-popup" type="button" class="reset-popup__button">Log in</button>
 			</div>
 		</div>
 	</div>
@@ -381,7 +382,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240717094137"></script>
+	<script src="js/app.min.js?_v=20240718181404"></script>
 </body>
 
 </html>
