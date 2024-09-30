@@ -5,7 +5,7 @@
 	<title>User profile</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240718182856">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240930194000">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -41,7 +41,7 @@
 								</li>
 							</ul>
 							<div class="menu__app app-menu">
-								<a href="#" class="app-menu__link"><picture><source srcset="img/app.webp" type="image/webp"><img src="img/app.jpg" alt="App Store"></picture></a>
+								<a href="#" class="app-menu__link"><picture><source srcset="img/app.webp" type="image/webp"><img src="img/app.jpg" alt="App Store"></picture><span>Coming soon</span></a>
 							</div>
 						</div>
 					</nav>
@@ -91,6 +91,7 @@
 									<div class="item-congratulations__text">
 										Valentyn
 									</div>
+									<span class="item-congratulations__checking">Please enter your unique name. Checking for uniqueness</span>
 								</div>
 							</div>
 							<div class="congratulations__item item-congratulations">
@@ -106,9 +107,6 @@
 									<div class="item-congratulations__image">
 										<img src="img/icons/instagram.svg" alt="Image">
 									</div>
-									<div class="item-congratulations__value">
-										+100
-									</div>
 								</div>
 							</div>
 							<div class="congratulations__item item-congratulations">
@@ -117,6 +115,7 @@
 										shpiruk
 									</div>
 									<div class="item-congratulations__icon">
+										<span>+1000$YP</span>
 										<img src="img/icons/check.svg" alt="Image">
 									</div>
 								</div>
@@ -124,9 +123,6 @@
 									<div class="item-congratulations__image">
 										<img src="img/icons/telegram.svg" alt="Image">
 									</div>
-									<div class="item-congratulations__value">
-										+100
-									</div>
 								</div>
 							</div>
 							<div class="congratulations__item item-congratulations">
@@ -135,15 +131,13 @@
 										shpiruk
 									</div>
 									<div class="item-congratulations__icon">
+										<span>+1000$YP</span>
 										<img src="img/icons/check.svg" alt="Image">
 									</div>
 								</div>
 								<div class="item-congratulations__bonus">
 									<div class="item-congratulations__image">
 										<img src="img/icons/twitter.svg" alt="Image">
-									</div>
-									<div class="item-congratulations__value">
-										+100
 									</div>
 								</div>
 							</div>
@@ -163,10 +157,13 @@
 									<img src="img/icons/user.svg" alt="Image">
 								</span>
 								<div class="content-congratulations__value">
-									Balans: <span>1000</span>
+									Balans: <span>9300$YP</span>
 								</div>
 							</div>
-							<button data-da=".item-congratulations-sub,767,1" type="button" class="content-congratulations__button button _fw button-action ">
+							<button type="button" class="content-congratulations__wallet button button-action">Connect a wallet
+								<span>Coming soon</span>
+							</button>
+							<button data-da=".item-congratulations-sub,767,1" type="button" class="content-congratulations__button button _fw button-action">
 								Save changes
 							</button>
 						</div>
@@ -202,14 +199,12 @@
 									</div>
 									<div class="item-friends__email">
 										shpi********@yzay.org
+										<span>+100$YP</span>
 									</div>
 								</div>
 								<div class="item-friends__executed">
 									Executed
 								</div>
-							</div>
-							<div class="item-friends__bonus">
-								+100
 							</div>
 						</div>
 						<div class="friends__item item-friends">
@@ -220,14 +215,12 @@
 									</div>
 									<div class="item-friends__email">
 										shpi********@yzay.org
+										<span>+100$YP</span>
 									</div>
 								</div>
 								<div class="item-friends__executed">
 									Executed
 								</div>
-							</div>
-							<div class="item-friends__bonus">
-								+100
 							</div>
 						</div>
 						<div class="friends__item item-friends">
@@ -238,14 +231,12 @@
 									</div>
 									<div class="item-friends__email">
 										shpi********@yzay.org
+										<span>+100$YP</span>
 									</div>
 								</div>
 								<div class="item-friends__executed">
 									Executed
 								</div>
-							</div>
-							<div class="item-friends__bonus">
-								+100
 							</div>
 						</div>
 					</div>
@@ -258,8 +249,80 @@
 			</div>
 			<div class="page__tasks tasks">
 				<div class="tasks__container">
-					<div class="tasks__text">
-						Tasks: Coming soon <span>🙂</span>
+					<div class="tasks__item item-tasks">
+						<button type="button" class="item-tasks__share share-tasks" disabled>
+							<span class="share-tasks__body">
+								<span class="share-tasks__follow">Follow Youzayou CEO in IG</span>
+								<span class="share-tasks__value">+1000$YP</span>
+							</span>
+						</button>
+						<button type="button" class="item-tasks__follow button button_dark">Follow</button>
+						<form class="item-tasks__form form-tasks" action="">
+							<input autocomplete="off" type="text" name="form[]" placeholder="User name Instagram" class="form-tasks__input input">
+							<button type="button" class="form-tasks__button button button_dark">Done</button>
+						</form>
+						<span class="item-tasks__checking">Please enter your unique name. Checking for uniqueness</span>
+						<div class="item-tasks__value"><span>entin_le</span></div>
+					</div>
+					<div class="tasks__item item-tasks _follow">
+						<button type="button" class="item-tasks__share share-tasks" disabled>
+							<span class="share-tasks__body">
+								<span class="share-tasks__follow">Follow Youzayou CEO in IG</span>
+								<span class="share-tasks__value">+1000$YP</span>
+							</span>
+						</button>
+						<button type="button" class="item-tasks__follow button button_dark">Follow</button>
+						<form class="item-tasks__form form-tasks" action="">
+							<input autocomplete="off" type="text" name="form[]" placeholder="User name Instagram" class="form-tasks__input input">
+							<button type="button" class="form-tasks__button button button_dark">Done</button>
+						</form>
+						<span class="item-tasks__checking">Please enter your unique name. Checking for uniqueness</span>
+						<div class="item-tasks__value"><span>entin_le</span></div>
+					</div>
+					<div class="tasks__item item-tasks _done">
+						<button type="button" class="item-tasks__share share-tasks" disabled>
+							<span class="share-tasks__body">
+								<span class="share-tasks__follow">Follow Youzayou CEO in IG</span>
+								<span class="share-tasks__value">+1000$YP</span>
+							</span>
+						</button>
+						<button type="button" class="item-tasks__follow button button_dark">Follow</button>
+						<form class="item-tasks__form form-tasks" action="">
+							<input autocomplete="off" type="text" name="form[]" placeholder="User name Instagram" class="form-tasks__input input">
+							<button type="button" class="form-tasks__button button button_dark">Done</button>
+						</form>
+						<span class="item-tasks__checking">Please enter your unique name. Checking for uniqueness</span>
+						<div class="item-tasks__value"><span>entin_le</span></div>
+					</div>
+					<div class="tasks__item item-tasks _follow">
+						<button type="button" class="item-tasks__share share-tasks" disabled>
+							<span class="share-tasks__body">
+								<span class="share-tasks__follow">Share in Instagram Stories</span>
+								<span class="share-tasks__value">+1000$YP</span>
+							</span>
+						</button>
+						<button type="button" class="item-tasks__follow button button_dark">Follow</button>
+						<form class="item-tasks__form form-tasks" action="">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Link or user name In.." class="form-tasks__input input">
+							<button type="button" class="form-tasks__button button button_dark">Done</button>
+						</form>
+						<span class="item-tasks__checking">Please enter your unique name. Checking for uniqueness</span>
+						<div class="item-tasks__value"><span>entin_le</span></div>
+					</div>
+					<div class="tasks__item item-tasks _done">
+						<button type="button" class="item-tasks__share share-tasks" disabled>
+							<span class="share-tasks__body">
+								<span class="share-tasks__follow">Share in Instagram Stories</span>
+								<span class="share-tasks__value">+1000$YP</span>
+							</span>
+						</button>
+						<button type="button" class="item-tasks__follow button button_dark">Follow</button>
+						<form class="item-tasks__form form-tasks" action="">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Link or user name In.." class="form-tasks__input input">
+							<button type="button" class="form-tasks__button button button_dark">Done</button>
+						</form>
+						<span class="item-tasks__checking">Please enter your unique name. Checking for uniqueness</span>
+						<div class="item-tasks__value"><span>entin_le</span></div>
 					</div>
 				</div>
 			</div>
@@ -274,7 +337,199 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240718182856"></script>
+	<div id="youzayou-item-01" aria-hidden="true" class="popup popup-item">
+		<div class="popup__wrapper popup-item__wrapper">
+			<div class="popup__content popup-item__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-item__icon">🚀</div>
+				<h5 class="popup-item__title">Youzayou Token!</h5>
+				<div class="popup-item__text">
+					Youzayou is a digital asset designed for use within the Youzayou social network and can be integrated into other projects as a means of
+					payment, rewards, and much more. With its unique functionality and flexibility, the Youzayou token opens up new opportunities for users in
+					the realm of interaction and rewards in the online environment.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="youzayou-item-02" aria-hidden="true" class="popup popup-item">
+		<div class="popup__wrapper popup-item__wrapper">
+			<div class="popup__content popup-item__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-item__icon">🌐</div>
+				<h5 class="popup-item__title">Use in the Youzayou Social Network</h5>
+				<div class="popup-item__text">
+					The Youzayou token is designed for use within our social network, which will soon be available. Users will be able to utilize tokens for
+					various purposes such as purchasing goods and services, subscribing to premium features, earning rewards for activity, and much more. The
+					Youzayou tokens will enable us to create a dynamic and engaging environment for communication and interaction within our community.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="youzayou-item-03" aria-hidden="true" class="popup popup-item">
+		<div class="popup__wrapper popup-item__wrapper">
+			<div class="popup__content popup-item__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-item__icon">💼</div>
+				<h5 class="popup-item__title">Integration into Other Projects</h5>
+				<div class="popup-item__text">
+					In addition to its use within our social network, the Youzayou token can be integrated into other projects as a means of payment, rewards,
+					and other purposes. Expand the capabilities of your project by allowing your users to use Youzayou tokens to interact with your
+					application or platform. Whether you are a developer of apps, websites, or other online products, the Youzayou token can become an
+					important component of your project.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="youzayou-item-04" aria-hidden="true" class="popup popup-item">
+		<div class="popup__wrapper popup-item__wrapper">
+			<div class="popup__content popup-item__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-item__icon">📈</div>
+				<h5 class="popup-item__title">Scalability and Growth</h5>
+				<div class="popup-item__text">
+					The Youzayou token is designed for global reach. Our team is actively working on expanding the token's ecosystem by collaborating with
+					leading projects in various fields such as e-commerce, the gaming industry, education, and more. We believe that the Youzayou token will
+					become a significant element of the digital economy of the future.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="youzayou-item-05" aria-hidden="true" class="popup popup-item">
+		<div class="popup__wrapper popup-item__wrapper">
+			<div class="popup__content popup-item__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-item__icon">🔒</div>
+				<h5 class="popup-item__title">Security and Reliability</h5>
+				<div class="popup-item__text">
+					The Youzayou token is built on the blockchain and secured by best security practices. We have thoroughly audited and tested the token
+					contract to ensure its reliability and security. You can be confident that using the Youzayou token is safe and dependable.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="youzayou-item-06" aria-hidden="true" class="popup popup-item">
+		<div class="popup__wrapper popup-item__wrapper">
+			<div class="popup__content popup-item__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-item__icon">🌍</div>
+				<h5 class="popup-item__title">Global Community</h5>
+				<div class="popup-item__text">
+					Join our community and become part of the Youzayou token ecosystem. We are creating a global platform where users from around the world
+					can interact, share ideas, and receive rewards for their activity. Be part of the future of social networking and online communities,
+					where your engagement and participation are rewarded.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="log-in-popup" aria-hidden="true" class="popup log-in-popup">
+		<div class="popup__wrapper log-in-popup__wrapper">
+			<div class="popup__content log-in-popup__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="log-in-popup__label">Log in</div>
+				<div class="log-in-popup__form form-log-in-popup">
+					<input id="log-in-email" type="email" name="form[]" placeholder="Email" class="form-log-in-popup__email input input-popup" aria-label="Email" autocomplete="off" required>
+					<div class="form-log-in-popup__group">
+						<input id="log-in-password" type="password" name="password" placeholder="Password" class="form-log-in-popup__password input input-popup" aria-label="Password" autocomplete="off" required>
+						<button type="button" class="button__viewpass"></button>
+					</div>
+					<button data-popup="#failed-popup" type="submit" class="form-log-in-popup__button button">Log in</button>
+				</div>
+				<button data-popup="#reset-popup" type="button" class="log-in-popup__button">Forgot password?</button>
+			</div>
+		</div>
+	</div>
+	<div id="reset-popup" aria-hidden="true" class="popup reset-popup">
+		<div class="popup__wrapper reset-popup__wrapper">
+			<div class="popup__content reset-popup__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="reset-popup__label">Reset password</div>
+				<div class="reset-popup__form form-reset-popup">
+					<input id="reset-email" type="email" name="form[]" placeholder="Email" class="form-reset-popup__email input input-popup" aria-label="Email" autocomplete="off" required>
+					<button data-popup="#sent-popup" type="submit" class="form-reset-popup__button button">Reset password</button>
+				</div>
+				<button data-popup="#log-in-popup" type="button" class="reset-popup__button">Log in</button>
+			</div>
+		</div>
+	</div>
+	<div id="failed-popup" aria-hidden="true" class="popup failed-popup">
+		<div class="popup__wrapper failed-popup__wrapper">
+			<div class="popup__content failed-popup__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="failed-popup__label _popup-label">Failed to log in to the account</div>
+				<div class="failed-popup__text _popup-text">
+					Try using different login credentials. If you don't have a Yzay account, sign up.
+				</div>
+				<button type="button" class="failed-popup__button button _popup-button">Try again</button>
+			</div>
+		</div>
+	</div>
+	<div id="submitted-popup" aria-hidden="true" class="popup submitted-popup">
+		<div class="popup__wrapper submitted-popup__wrapper">
+			<div class="popup__content submitted-popup__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="submitted-popup__label _popup-label">Registration data submitted, please wait for an email confirmation.</div>
+				<button data-close type="button" class="submitted-popup__button button _popup-button">Ok</button>
+			</div>
+		</div>
+	</div>
+	<div id="sent-popup" aria-hidden="true" class="popup sent-popup">
+		<div class="popup__wrapper sent-popup__wrapper">
+			<div class="popup__content sent-popup__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="sent-popup__label _popup-label">Message sent</div>
+				<div class="sent-popup__text _popup-text">
+					Try using different login credentials. If you don't have a Yzay account, sign up.
+				</div>
+				<button data-popup="#not-sent-popup" type="button" class="sent-popup__button button _popup-button">Ok</button>
+			</div>
+		</div>
+	</div>
+	<div id="not-sent-popup" aria-hidden="true" class="popup not-sent-popup">
+		<div class="popup__wrapper not-sent-popup__wrapper">
+			<div class="popup__content not-sent-popup__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="not-sent-popup__label _popup-label">Message not sent</div>
+				<div class="not-sent-popup__text _popup-text">
+					Try using different recovery information. If you don't have a Yzay account, please register.
+				</div>
+				<button data-close type="button" class="not-sent-popup__button button _popup-button">Ok</button>
+			</div>
+		</div>
+	</div>
+	<div id="notice" aria-hidden="true" class="popup notice">
+		<div class="popup__wrapper notice__wrapper">
+			<div class="popup__content notice__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="notice__label _popup-label">Notice!!!</div>
+				<div class="notice__text _popup-text">
+					Please enter your unique name. Checking for uniqueness
+				</div>
+				<button data-popup="#daily-rewards" data-close type="button" class="notice__button button _popup-button">Ok</button>
+			</div>
+		</div>
+	</div>
+	<div id="daily-rewards" aria-hidden="true" class="popup daily-rewards">
+		<div class="popup__wrapper daily-rewards__wrapper">
+			<div class="popup__content daily-rewards__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="daily-rewards__label _popup-label">🎉🎉🎉🎉Congratulations!</div>
+				<div class="daily-rewards__text _popup-text">
+					Your daily rewards🥳🥳🥳
+				</div>
+				<div class="daily-rewards__actions actions-daily-rewards">
+					<button type="button" class="actions-daily-rewards__button">
+						72 days <br> check-in
+					</button>
+					<button type="button" class="actions-daily-rewards__button">
+						+1000$Y <br> Points
+					</button>
+				</div>
+				<button data-close type="button" class="daily-rewards__button button _popup-button">Ok</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js?_v=20240930194000"></script>
+	<script src="js/app.min.js?_v=20240930194000"></script>
 </body>
 
 </html>

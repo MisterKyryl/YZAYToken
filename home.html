@@ -5,7 +5,7 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240718182856">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240930194000">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -33,7 +33,7 @@
 								</li>
 							</ul>
 							<div class="menu__app app-menu">
-								<a href="#" class="app-menu__link"><picture><source srcset="img/app.webp" type="image/webp"><img src="img/app.jpg" alt="App Store"></picture></a>
+								<a href="#" class="app-menu__link"><picture><source srcset="img/app.webp" type="image/webp"><img src="img/app.jpg" alt="App Store"></picture><span>Coming soon</span></a>
 							</div>
 						</div>
 					</nav>
@@ -47,12 +47,17 @@
 						Token Youzayou (YZAY)
 					</h1>
 					<div class="main__body body-main">
-						<h2 class="body-main__title">
-							Make life brighter!
-						</h2>
-						<p class="body-main__text">
-							Look for places of rest in your city, create meetings and events, communicate with friends
-						</p>
+						<div class="body-main__top">
+							<a href="#" data-popup="#notice" class="body-main__link">Youzayou website <span>↗</span></a>
+						</div>
+						<div class="body-main__bottom">
+							<h2 class="body-main__title">
+								Make life brighter!
+							</h2>
+							<p class="body-main__text">
+								Look for places of rest in your city, create meetings and events, communicate with friends
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -382,7 +387,40 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240718182856"></script>
+	<div id="notice" aria-hidden="true" class="popup notice">
+		<div class="popup__wrapper notice__wrapper">
+			<div class="popup__content notice__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="notice__label _popup-label">Notice!!!</div>
+				<div class="notice__text _popup-text">
+					Please enter your unique name. Checking for uniqueness
+				</div>
+				<button data-popup="#daily-rewards" data-close type="button" class="notice__button button _popup-button">Ok</button>
+			</div>
+		</div>
+	</div>
+	<div id="daily-rewards" aria-hidden="true" class="popup daily-rewards">
+		<div class="popup__wrapper daily-rewards__wrapper">
+			<div class="popup__content daily-rewards__content _popup-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="daily-rewards__label _popup-label">🎉🎉🎉🎉Congratulations!</div>
+				<div class="daily-rewards__text _popup-text">
+					Your daily rewards🥳🥳🥳
+				</div>
+				<div class="daily-rewards__actions actions-daily-rewards">
+					<button type="button" class="actions-daily-rewards__button">
+						72 days <br> check-in
+					</button>
+					<button type="button" class="actions-daily-rewards__button">
+						+1000$Y <br> Points
+					</button>
+				</div>
+				<button data-close type="button" class="daily-rewards__button button _popup-button">Ok</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js?_v=20240930194000"></script>
+	<script src="js/app.min.js?_v=20240930194000"></script>
 </body>
 
 </html>

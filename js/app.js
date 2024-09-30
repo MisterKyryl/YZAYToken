@@ -561,6 +561,58 @@
             checkButtonState();
         }
     }));
+    function launchConfetti() {
+        const duration = 3 * 900;
+        const animationEnd = Date.now() + duration;
+        const defaults = {
+            startVelocity: 30,
+            spread: 360,
+            ticks: 120,
+            zIndex: 9999
+        };
+        const interval = setInterval((function() {
+            const timeLeft = animationEnd - Date.now();
+            if (timeLeft <= 0) return clearInterval(interval);
+            const particleCount = 150;
+            const originX = Math.random() * .2 + .4;
+            const originY = Math.random() * .2 + .4;
+            confetti(Object.assign({}, defaults, {
+                particleCount,
+                origin: {
+                    x: originX,
+                    y: originY
+                }
+            }));
+        }), 750);
+    }
+    const popup = document.getElementById("daily-rewards");
+    const observer = new MutationObserver((mutations => {
+        mutations.forEach((mutation => {
+            if (mutation.attributeName === "class") {
+                const hasClass = popup.classList.contains("popup_show");
+                if (hasClass) launchConfetti();
+            }
+        }));
+    }));
+    observer.observe(popup, {
+        attributes: true
+    });
+    const taskItems = document.querySelectorAll(".item-tasks");
+    taskItems.forEach((item => {
+        const followButton = item.querySelector(".item-tasks__follow");
+        const shareButton = item.querySelector(".item-tasks__share");
+        const doneButton = item.querySelector(".form-tasks__button");
+        if (followButton) followButton.addEventListener("click", (() => {
+            if (!item.classList.contains("_done") && !item.classList.contains("_follow")) item.classList.add("_follow");
+        }));
+        if (shareButton) shareButton.addEventListener("click", (() => {
+            if (!item.classList.contains("_done") && !item.classList.contains("_follow")) item.classList.add("_follow");
+        }));
+        if (doneButton) doneButton.addEventListener("click", (() => {
+            if (item.classList.contains("_follow")) item.classList.remove("_follow");
+            item.classList.add("_done");
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     formFieldsInit({
